@@ -1,0 +1,155 @@
+﻿@model LGCovid.Models.Data.Expediente
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Expediente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LGIdNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LGIdNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SospechaCovid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SospechaCovid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sintomas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sintomas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaConsulta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaConsulta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LugarConsulta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LugarConsulta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TestCovid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TestCovid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CuandoSeRealizoTest)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CuandoSeRealizoTest)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DondeSeRealizo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DondeSeRealizo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Incapacidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Incapacidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FolioIncapacidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FolioIncapacidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaInicioIncapacidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaInicioIncapacidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiasIncapacidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiasIncapacidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PacienteSelforOther)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PacienteSelforOther)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelContacto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelContacto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastChangeDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastChangeDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastChangeUser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastChangeUser)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Regresar a la lista", "Index")
+</p>

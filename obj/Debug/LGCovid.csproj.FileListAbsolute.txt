@@ -1,0 +1,8 @@
+C:\Users\pablo.gallegos\source\repos\PabloGallegosH\LGCovid\obj\Debug\LGCovid.csprojAssemblyReference.cache
+C:\Users\pablo.gallegos\source\repos\PabloGallegosH\LGCovid\obj\Debug\LGCovid.Migrations.InitialCreate.resources
+C:\Users\pablo.gallegos\source\repos\PabloGallegosH\LGCovid\obj\Debug\LGCovid.Migrations.Expediente.resources
+C:\Users\pablo.gallegos\source\repos\PabloGallegosH\LGCovid\obj\Debug\LGCovid.Migrations.Expediente1.resources
+C:\Users\pablo.gallegos\source\repos\PabloGallegosH\LGCovid\obj\Debug\LGCovid.Migrations.Expediente2.resources
+C:\Users\pablo.gallegos\source\repos\PabloGallegosH\LGCovid\obj\Debug\LGCovid.Migrations.Expediente3.resources
+C:\Users\pablo.gallegos\source\repos\PabloGallegosH\LGCovid\obj\Debug\LGCovid.csproj.GenerateResource.cache
+C:\Users\pablo.gallegos\source\repos\PabloGallegosH\LGCovid\obj\Debug\LGCovid.csproj.CoreCompileInputs.cache
