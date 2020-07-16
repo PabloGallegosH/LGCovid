@@ -17,7 +17,7 @@ namespace LGCovid.Models
         public string LGIdNumber { get; set; }
         
         [Display(Name ="Sospecha que padece Covid?")]
-        public bool? SospechaCovid { get; set; }
+        public bool SospechaCovid { get; set; }
         
         [Display(Name = "Síntomas")]
         public string Sintomas { get; set; }
@@ -30,7 +30,7 @@ namespace LGCovid.Models
         public string LugarConsulta { get; set; }
         
         [Display(Name ="Ya se realizó el test de Covid?")]
-        public bool? TestCovid { get; set; }
+        public bool TestCovid { get; set; }
 
         [Display(Name ="Cuando se lo realizó?")]
         [DataType(DataType.Date)]
@@ -43,7 +43,7 @@ namespace LGCovid.Models
         public string Status { get; set; }
 
         [Display(Name ="Tiene incapacidad?")]
-        public bool? Incapacidad { get; set; }
+        public bool Incapacidad { get; set; }
 
         [Display(Name = "Ingrese su folio de incapacidad")]
         public string FolioIncapacidad { get; set; }
