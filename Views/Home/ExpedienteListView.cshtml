@@ -1,0 +1,106 @@
+﻿@model IEnumerable<LGCovid.Models.Expediente>
+
+@{
+    ViewBag.Title = "ExpedienteListView";
+    Layout = "~/Views/Home/Index.cshtml";
+}
+
+<h2>ExpedienteListView</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SospechaCovid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sintomas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaConsulta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LugarConsulta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TestCovid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CuandoSeRealizoTest)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DondeSeRealizo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Incapacidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FolioIncapacidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaInicioIncapacidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiasIncapacidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PacienteSelforOther)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelContacto)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SospechaCovid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sintomas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaConsulta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LugarConsulta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TestCovid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CuandoSeRealizoTest)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DondeSeRealizo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Incapacidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FolioIncapacidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaInicioIncapacidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiasIncapacidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PacienteSelforOther)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelContacto)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.LGIdNumber }) |
+            @Html.ActionLink("Details", "Details", new { id=item.LGIdNumber }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.LGIdNumber })
+        </td>
+    </tr>
+}
+
+</table>

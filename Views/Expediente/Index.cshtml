@@ -1,0 +1,151 @@
+﻿@model IEnumerable<LGCovid.Models.Data.Expediente>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<style>
+table.center{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+</style>*@
+
+<h2>Indice</h2>
+
+<p>
+    @Html.ActionLink("Crear nuevo expediente", "Create")
+</p>
+<table class="table" style="margin-left:auto; margin-right:auto">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LGIdNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SospechaCovid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sintomas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaConsulta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LugarConsulta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TestCovid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CuandoSeRealizoTest)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DondeSeRealizo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Incapacidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FolioIncapacidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaInicioIncapacidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiasIncapacidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PacienteSelforOther)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelContacto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastChangeDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastChangeUser)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.LGIdNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SospechaCovid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sintomas)
+        </td>
+        <td>
+            @if (item.FechaConsulta.HasValue)
+            {
+                @Convert.ToDateTime(item.FechaConsulta).ToString("dd/MM/yyyy")
+            }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LugarConsulta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TestCovid)
+        </td>
+        <td>
+            @if (item.CuandoSeRealizoTest.HasValue)
+            {
+            @Convert.ToDateTime(item.CuandoSeRealizoTest).ToString("dd/MM/yyyy")
+            }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DondeSeRealizo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Incapacidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FolioIncapacidad)
+        </td>
+        <td>
+            @if (item.FechaInicioIncapacidad.HasValue)
+            {
+                @Convert.ToDateTime(item.FechaInicioIncapacidad).ToString("dd/MM/yyyy")
+            }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiasIncapacidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PacienteSelforOther)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelContacto)
+        </td>
+        <td width="400">
+            @Html.DisplayFor(modelItem => item.LastChangeDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastChangeUser)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.Id }) |
+         </td>
+        <td>
+            @Html.ActionLink("Detalles", "Details", new { id=item.Id }) |
+            </td>
+        <td>
+            @Html.ActionLink("Borrar", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
